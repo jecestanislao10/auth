@@ -1,5 +1,5 @@
-# auth
-wrapper library for passport-jwt
+# jec-auth
+Wrapper library for passport-jwt. Supports express and sequelize.
 
 ## Install
 ```
@@ -23,4 +23,3 @@ router.use(authenticate(), restrictedControllers);
 module.exports = router;
 
 ```
-
