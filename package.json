@@ -1,5 +1,5 @@
 {
-  "name": "auth",
+  "name": "@jec/auth",
   "version": "1.0.0",
   "description": "wrapper library for passport-jwt",
   "main": "index.js",
