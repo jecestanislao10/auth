@@ -1,0 +1,28 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "wrapper library for passport-jwt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jecestanislao10/auth.git"
+  },
+  "keywords": [
+    "auth",
+    "passport",
+    "jwt"
+  ],
+  "author": "Jerico Estanislao <jestanislao@stratpoint.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jecestanislao10/auth/issues"
+  },
+  "homepage": "https://github.com/jecestanislao10/auth#readme",
+  "dependencies": {
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}
