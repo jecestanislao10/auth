@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/jecestanislao10/auth.git"
   },
+  "engines": {
+    "node": ">=4.2.4"
+  },
   "keywords": [
     "auth",
     "passport",
