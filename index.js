@@ -1,19 +1,22 @@
 const passport = require('passport');
 const {ExtractJwt, Strategy} = require('passport-jwt');
+let repository, accessKey;
 // const userRepository = require('src/infra/repositories/UserRepository');
 // const userModel = require('src/infra/models/UserModel');
 
-exports.initialize = () => {
+exports.initialize = (key, UserRepository) => {
+  accessKey = key;
+  repository = UserRepository;
   return passport.initialize();
 };
 
-exports.authenticate = (key, repository) => {
+exports.authenticate = () => {
   return [
     (req, res, next) => {
 
       const jwtOptions = {};
       jwtOptions.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
-      jwtOptions.secretOrKey = key;  
+      jwtOptions.secretOrKey = accessKey;  
       
 
       passport.use(new Strategy(jwtOptions, (jwt_payload, done) => {
