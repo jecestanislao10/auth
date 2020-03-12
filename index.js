@@ -8,7 +8,7 @@ exports.initialize = () => {
 };
 
 exports.authenticate = () => {
-  return passport.authenticate();
+  return passport.authenticate('jwt');
 }
 
 exports.configure = (config, findById) => {
