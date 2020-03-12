@@ -1,6 +1,6 @@
 {
   "name": "jec-auth",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "wrapper library for passport-jwt",
   "main": "index.js",
   "scripts": {
