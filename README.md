@@ -16,9 +16,9 @@ const restrictedControllers = require('./*')
 
 const router = Router();
 
-router.use(initialize());
-
 router.use(configutre(process.env.ACCESS_KEY, findById));
+
+router.use(initialize());
 
 router.use(authenticate(), restrictedControllers);
 
